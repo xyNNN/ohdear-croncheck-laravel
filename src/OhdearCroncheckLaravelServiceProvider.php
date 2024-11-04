@@ -19,7 +19,6 @@ class OhdearCroncheckLaravelServiceProvider extends PackageServiceProvider
         $package
             ->name('ohdear-croncheck-laravel')
             ->hasConfigFile()
-            ->hasViews()
             ->hasMigration('create_ohdear-croncheck-laravel_table')
             ->hasCommand(OhdearCroncheckLaravelCommand::class);
     }
